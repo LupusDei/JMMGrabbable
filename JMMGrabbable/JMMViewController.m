@@ -7,17 +7,21 @@
 //
 
 #import "JMMViewController.h"
+#import "JMMGrabbableViewController.h"
 
-@interface JMMViewController ()
+@interface JMMViewController () <GrabbableResponder>
 
 @end
 
-@implementation JMMViewController
+@implementation JMMViewController {
+	JMMGrabbableViewController *_grabbable;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    _grabbable = [[JMMGrabbableViewController alloc] initWithReferenceView:self.view andResponder:self];
+	self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning

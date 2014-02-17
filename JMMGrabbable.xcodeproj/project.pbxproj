@@ -21,6 +21,8 @@
 		62DC834F18B26A1E006D7564 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DC833118B26A1E006D7564 /* UIKit.framework */; };
 		62DC835718B26A1E006D7564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62DC835518B26A1E006D7564 /* InfoPlist.strings */; };
 		62DC835918B26A1E006D7564 /* JMMGrabbableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DC835818B26A1E006D7564 /* JMMGrabbableTests.m */; };
+		62DC836418B26AB1006D7564 /* JMMGrabbableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DC836318B26AB1006D7564 /* JMMGrabbableViewController.m */; };
+		62DC836718B26E34006D7564 /* UIView+SizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DC836618B26E34006D7564 /* UIView+SizeHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		62DC835418B26A1E006D7564 /* JMMGrabbableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMMGrabbableTests-Info.plist"; sourceTree = "<group>"; };
 		62DC835618B26A1E006D7564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62DC835818B26A1E006D7564 /* JMMGrabbableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMMGrabbableTests.m; sourceTree = "<group>"; };
+		62DC836218B26AB1006D7564 /* JMMGrabbableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMGrabbableViewController.h; sourceTree = "<group>"; };
+		62DC836318B26AB1006D7564 /* JMMGrabbableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMGrabbableViewController.m; sourceTree = "<group>"; };
+		62DC836518B26E34006D7564 /* UIView+SizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeHelper.h"; sourceTree = "<group>"; };
+		62DC836618B26E34006D7564 /* UIView+SizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 		62DC833318B26A1E006D7564 /* JMMGrabbable */ = {
 			isa = PBXGroup;
 			children = (
+				62DC836518B26E34006D7564 /* UIView+SizeHelper.h */,
+				62DC836618B26E34006D7564 /* UIView+SizeHelper.m */,
 				62DC833C18B26A1E006D7564 /* JMMAppDelegate.h */,
 				62DC833D18B26A1E006D7564 /* JMMAppDelegate.m */,
 				62DC833F18B26A1E006D7564 /* Main.storyboard */,
@@ -119,6 +127,8 @@
 				62DC834318B26A1E006D7564 /* JMMViewController.m */,
 				62DC834518B26A1E006D7564 /* Images.xcassets */,
 				62DC833418B26A1E006D7564 /* Supporting Files */,
+				62DC836218B26AB1006D7564 /* JMMGrabbableViewController.h */,
+				62DC836318B26AB1006D7564 /* JMMGrabbableViewController.m */,
 			);
 			path = JMMGrabbable;
 			sourceTree = "<group>";
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DC836418B26AB1006D7564 /* JMMGrabbableViewController.m in Sources */,
 				62DC833A18B26A1E006D7564 /* main.m in Sources */,
 				62DC833E18B26A1E006D7564 /* JMMAppDelegate.m in Sources */,
 				62DC834418B26A1E006D7564 /* JMMViewController.m in Sources */,
+				62DC836718B26E34006D7564 /* UIView+SizeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
